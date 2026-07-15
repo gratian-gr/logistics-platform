@@ -4,3 +4,8 @@ dist/
 .DS_Store
 package.json
 package-lock.json
+
+.dev.vars*
+!.dev.vars.example
+.env*
+!.env.example
