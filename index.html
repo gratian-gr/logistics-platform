@@ -1,0 +1,1093 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Digital Freight Platform Market Research - Tanzania &amp; East Africa</title>
+
+  <!-- Essential CDN Libraries -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            primary: {
+              50: 'hsl(210, 75%, 95%)',
+              100: 'hsl(210, 75%, 85%)',
+              200: 'hsl(210, 75%, 75%)',
+              300: 'hsl(210, 75%, 65%)',
+              400: 'hsl(210, 75%, 55%)',
+              500: 'hsl(210, 75%, 40%)',
+              600: 'hsl(210, 75%, 35%)',
+              700: 'hsl(210, 75%, 25%)',
+              800: 'hsl(210, 75%, 15%)',
+              900: 'hsl(210, 75%, 10%)'
+            },
+            accent: {
+              50: 'hsl(160, 65%, 95%)',
+              100: 'hsl(160, 65%, 85%)',
+              200: 'hsl(160, 65%, 75%)',
+              300: 'hsl(160, 65%, 65%)',
+              400: 'hsl(160, 65%, 60%)',
+              500: 'hsl(160, 65%, 55%)',
+              600: 'hsl(160, 65%, 50%)',
+              700: 'hsl(160, 65%, 40%)',
+              800: 'hsl(160, 65%, 30%)',
+              900: 'hsl(160, 65%, 20%)'
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0"></script>
+
+  <!-- Preline UI Components -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/preline@2.0.3/dist/preline.min.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/preline@2.0.3/dist/preline.js"></script>
+
+  <!-- Micro-interactions & Custom Styles -->
+  <style>
+    /* Fix for fixed header offset */
+    section[id] {
+      scroll-margin-top: 100px;
+    }
+    
+    html { 
+      scroll-behavior: smooth; 
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+      }
+      html { scroll-behavior: auto; }
+    }
+
+    .btn-interactive {
+      transition: all 0.2s ease-out;
+    }
+    
+    .btn-interactive:hover {
+      transform: scale(1.05);
+      box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    }
+    
+    .btn-interactive:active {
+      transform: scale(0.95);
+    }
+
+    .card-interactive {
+      transition: all 0.3s ease-out;
+      border: 1px solid transparent;
+      --border-lightness: 40%;
+    }
+
+    .dark .card-interactive {
+      --border-lightness: 60%;
+    }
+
+    .card-interactive:hover {
+      box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+      filter: brightness(0.98);
+    }
+    
+    /* Primary colored cards */
+    .card-interactive[class*="primary"]:hover,
+    .card-interactive[class*="white"]:hover,
+    .card-interactive[class*="gray-"]:hover {
+      border-color: hsl(210, 75%, var(--border-lightness));
+    }
+    
+    /* Accent colored cards */
+    .card-interactive[class*="accent"]:hover {
+      border-color: hsl(160, 65%, var(--border-lightness));
+    }
+  </style>
+
+  <!-- Dark Mode Toggle Script -->
+  <script>
+    function toggleDarkMode() {
+      document.body.classList.toggle('dark');
+      const isDark = document.body.classList.contains('dark');
+      document.getElementById('sunIcon').style.display = isDark ? 'block' : 'none';
+      document.getElementById('moonIcon').style.display = isDark ? 'none' : 'block';
+    }
+  </script>
+</head>
+
+<body class="bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-gray-100 transition-colors duration-300">
+  <!-- Citation System Script -->
+  <script>
+    function initCitationSystem() {
+      let i = 1, map = new Map();
+      document.querySelectorAll('[data-ref]').forEach(el => {
+        if (el.dataset.citationProcessed) return;
+        const raw = (el.getAttribute('data-ref')||'').trim();
+        if (!raw) return;
+
+        const parts = raw.split('|');
+        const url = parts[0].trim();
+        const idx = (parts[1]||'').trim() || map.get(raw) || (map.set(raw, String(i)), String(i++));
+
+        if (!el.textContent || !el.textContent.trim()) { el.dataset.citationProcessed = 'true'; return; }
+
+        const btn = document.createElement('sup'); btn.textContent = String(idx);
+        Object.assign(btn.style, { fontSize:'8px', color:'#fff', cursor:'pointer', top: '1px', fontWeight:'bold', backgroundColor:'#0284c7', borderRadius:'50%', transition:'all .15s', userSelect:'none', minWidth:'19px', height:'19px', marginLeft:'6px', display:'inline-flex', alignItems:'center', justifyContent:'center', boxShadow:'0 1px 3px rgba(0,0,0,.2)', lineHeight:'1'});
+        btn.addEventListener('mouseenter', ()=> Object.assign(btn.style, { backgroundColor:'#0369a1', transform:'scale(1.12)' }));
+        btn.addEventListener('mouseleave', ()=> Object.assign(btn.style, { backgroundColor:'#0284c7', transform:'scale(1)' }));
+        btn.addEventListener('click', e=>{ e.preventDefault(); e.stopPropagation(); window.open(url, '_blank'); });
+
+        el.appendChild(btn); el.dataset.citationProcessed = 'true';
+      });
+    }
+  </script>
+
+  <!-- Progress Bar -->
+  <div class="fixed top-0 left-0 h-1 bg-primary-500 dark:bg-primary-400 z-[60] transition-all duration-300 ease-out" id="progressBar"></div>
+
+  <!-- Floating Header -->
+  <header class="fixed top-0 left-0 right-0 z-50 backdrop-blur bg-gray-50/90 dark:bg-gray-900/90 border-b border-primary-500/20 dark:border-primary-600/20">
+    <nav class="max-w-7xl mx-auto px-6 py-4">
+      <div class="flex items-center justify-between">
+        <h1 class="text-xl font-bold text-primary-700 dark:text-primary-300">Digital Freight Platform Research</h1>
+        
+        <div class="hidden md:flex items-center space-x-6">
+          <a href="#home" class="text-sm text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">Home</a>
+          <a href="#market" class="text-sm text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">Market</a>
+          <a href="#demand" class="text-sm text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">Demand</a>
+          <a href="#competition" class="text-sm text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">Competition</a>
+          <a href="#regulation" class="text-sm text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">Regulation</a>
+          <a href="#payment" class="text-sm text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">Payment</a>
+          <a href="#conclusion" class="text-sm text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">Conclusion</a>
+        </div>
+
+        <button onclick="toggleDarkMode()" class="btn-interactive p-2 rounded-lg bg-primary-100 dark:bg-primary-800 text-primary-600 dark:text-primary-300 hover:bg-primary-200 dark:hover:bg-primary-700 transition-all">
+          <i data-lucide="sun" id="sunIcon" class="w-5 h-5" style="display:none;"></i>
+          <i data-lucide="moon" id="moonIcon" class="w-5 h-5"></i>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main class="min-h-screen">
+    <!-- Hero Section -->
+    <section id="home" class="py-40 bg-primary-50/50 dark:bg-gray-900" data-aos="fade-up">
+      <div class="max-w-5xl mx-auto px-6">
+        <h2 class="text-4xl md:text-5xl font-bold mb-6 text-primary-700 dark:text-primary-300" data-ref="https://capmad.com/post/structuring-a-fragmented-fleet-the-new-frontier-of-african-road-logistics|52">
+          Digital Freight Platform Market Research
+        </h2>
+        <p class="text-xl text-gray-700 dark:text-gray-300 mb-8 leading-relaxed">
+          A comprehensive analysis of the digital freight logistics market in Tanzania and East Africa, examining market demand, competitive landscape, regulatory environment, and payment infrastructure to validate the business viability of a ride-hailing inspired trucking platform.
+        </p>
+        
+        <div class="grid md:grid-cols-3 gap-6 mt-12">
+          <div class="card-interactive p-6 bg-white/90 backdrop-blur-sm dark:bg-gray-800 rounded-xl shadow-md">
+            <div class="flex items-center space-x-4 mb-4">
+              <div class="flex-shrink-0 w-12 h-12 bg-primary-100 dark:bg-primary-900/30 rounded-lg flex items-center justify-center">
+                <i data-lucide="truck" class="w-6 h-6 text-primary-600 dark:text-primary-400"></i>
+              </div>
+              <h3 class="text-lg font-semibold text-primary-700 dark:text-primary-300">Market Opportunity</h3>
+            </div>
+            <p class="text-sm text-gray-600 dark:text-gray-400">Empty truck trips, high logistics costs, and fragmented supply chains create significant value gaps.</p>
+          </div>
+
+          <div class="card-interactive p-6 bg-white/90 backdrop-blur-sm dark:bg-gray-800 rounded-xl shadow-md">
+            <div class="flex items-center space-x-4 mb-4">
+              <div class="flex-shrink-0 w-12 h-12 bg-accent-100 dark:bg-accent-900/30 rounded-lg flex items-center justify-center">
+                <i data-lucide="globe" class="w-6 h-6 text-accent-600 dark:text-accent-400"></i>
+              </div>
+              <h3 class="text-lg font-semibold text-accent-700 dark:text-accent-300">Regional Scope</h3>
+            </div>
+            <p class="text-sm text-gray-600 dark:text-gray-400">Focus on Tanzania, Kenya, Uganda, Rwanda, and cross-border logistics corridors.</p>
+          </div>
+
+          <div class="card-interactive p-6 bg-white/90 backdrop-blur-sm dark:bg-gray-800 rounded-xl shadow-md">
+            <div class="flex items-center space-x-4 mb-4">
+              <div class="flex-shrink-0 w-12 h-12 bg-primary-100 dark:bg-primary-900/30 rounded-lg flex items-center justify-center">
+                <i data-lucide="shield-check" class="w-6 h-6 text-primary-600 dark:text-primary-400"></i>
+              </div>
+              <h3 class="text-lg font-semibold text-primary-700 dark:text-primary-300">Regulatory Analysis</h3>
+            </div>
+            <p class="text-sm text-gray-600 dark:text-gray-400">National compliance requirements and cross-border operational complexities.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Market Opportunity Section -->
+    <section id="market" class="py-20 bg-white/80 dark:bg-gray-900" data-aos="fade-up">
+      <div class="max-w-6xl mx-auto px-6">
+        <h2 class="text-3xl font-bold mb-8 text-primary-700 dark:text-primary-300" data-ref="https://capmad.com/post/structuring-a-fragmented-fleet-the-new-frontier-of-african-road-logistics|52">
+          Market Opportunity &amp; Pain Points
+        </h2>
+
+        <div class="grid md:grid-cols-2 gap-8 items-start mb-12">
+          <div class="space-y-6">
+            <p class="text-gray-700 dark:text-gray-300" data-ref="https://medium.com/@univarlogistics/the-return-load-problem-why-east-africas-trucks-are-running-half-empty-and-what-it-s-costing-b8ffcc1444f8|9">
+              Empty return trips constitute a major inefficiency in East African logistics. Studies indicate that between
+              <span class="mx-1 px-1.5 py-0.5 rounded-md bg-primary-100 dark:bg-primary-900/30 text-primary-800 dark:text-primary-300 font-semibold text-sm">30-40%</span>
+              of logistics trucks in Africa travel empty, representing a massive waste of resources and contributing
+              <span class="mx-1 px-1.5 py-0.5 rounded-md bg-primary-100 dark:bg-primary-900/30 text-primary-800 dark:text-primary-300 font-semibold text-sm">59%</span>
+              of total greenhouse gas emissions from return trips.
+            </p>
+
+            <p class="text-gray-700 dark:text-gray-300" data-ref="https://sustmob.org/PCFV/pdf/Northern-Corridor-Green-Freight-Strategy2030-EN.pdf|94">
+              Stakeholder feedback suggests an estimate of about
+              <span class="mx-1 px-1.5 py-0.5 rounded-md bg-primary-100 dark:bg-primary-900/30 text-primary-800 dark:text-primary-300 font-semibold text-sm">70%</span>
+              of trucks returning empty due to lack of demand, highlighting the enormous potential for digital platforms to optimize return loads.
+            </p>
+
+            <div class="pl-4 pr-3 py-3 border-l-4 border-primary-500 bg-primary-50/40 dark:bg-primary-900/30 rounded-r-lg">
+              <p class="text-sm font-medium text-primary-900 dark:text-primary-100 leading-relaxed" data-ref="https://capmad.com/post/structuring-a-fragmented-fleet-the-new-frontier-of-african-road-logistics|52">
+                <i data-lucide="info" class="inline-block w-4 h-4 mr-1.5 -mt-0.5"></i>
+                Key Finding: On most African trade corridors, road transport is dominated by very small carriers (one or two trucks) and independent drivers, leading to estimated empty backhaul rates of between 40% and 60% of truck kilometers due to inefficient matching of shippers and carriers.
+              </p>
+            </div>
+          </div>
+
+          <img
+            src="https://cdn.qwenlm.ai/da968bd4-7d62-41ca-9259-a0cbc27441c7/57b865c1-280b-494f-8fdc-966b858d8a0d/e0b58896-6e24-456f-b882-18c4bde98af9.png?key=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyZXNvdXJjZV91c2VyX2lkIjoiZGE5NjhiZDQtN2Q2Mi00MWNhLTkyNTktYTBjYmMyNzQ0MWM3IiwicmVzb3VyY2VfaWQiOiI1N2I4NjVjMS0yODBiLTQ5NGYtOGZkYy05NjZiODU4ZDhhMGQiLCJyZXNvdXJjZV9jaGF0X2lkIjpudWxsfQ.7-koqrtS1FMHpoVz0LfLsbdIxC9wttu7iy_fAcb98jM"
+            alt="Illustration showing two truck silhouettes side by side on a light gray background (#F5F5F5). Left truck: red silhouette (#DC2626) with empty cargo bay indicated by dashed lines and a large 'EMPTY' text label in bold white letters centered inside the cargo area. Right truck: green silhouette (#059669) with filled cargo bay containing three rectangular blue boxes (#3B82F6) stacked vertically. Above the trucks, a large circular arrow symbol in primary blue (#1E40AF) connects both vehicles, labeled 'Optimized Return Load' in dark gray text (#374151). Below the trucks, a horizontal bar chart shows 'Backhaul Efficiency' with a red segment at 30% and a green segment at 70%, connected by an upward trending arrow in primary blue (#1E40AF). Overall composition emphasizes the contrast between empty versus optimized truck utilization with clear directional flow from left to right."
+            class="w-full rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300"
+          />
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-6">
+          <div class="card-interactive p-6 bg-accent-50/50 dark:bg-accent-900/20 rounded-xl shadow-md">
+            <div class="flex items-center space-x-3 mb-4">
+              <div class="flex-shrink-0 w-10 h-10 bg-accent-100 dark:bg-accent-900/30 rounded-lg flex items-center justify-center">
+                <i data-lucide="circle-alert" class="w-5 h-5 text-accent-600 dark:text-accent-400"></i>
+              </div>
+              <h3 class="text-base font-semibold text-accent-700 dark:text-accent-300" data-ref="https://capmad.com/post/structuring-a-fragmented-fleet-the-new-frontier-of-african-road-logistics|52">High Logistics Costs</h3>
+            </div>
+            <p class="text-sm text-gray-700 dark:text-gray-300">
+              In several African economies, logistics costs can represent a significant portion of the value of goods, ranging from
+              <span class="mx-1 px-1.5 py-0.5 rounded-md bg-accent-100 dark:bg-accent-900/30 text-accent-800 dark:text-accent-300 font-semibold text-sm">50% to 75%</span>.
+              In contrast, developed economies typically have logistics costs closer to 6%–10%.
+            </p>
+          </div>
+
+          <div class="card-interactive p-6 bg-accent-50/50 dark:bg-accent-900/20 rounded-xl shadow-md">
+            <div class="flex items-center space-x-3 mb-4">
+              <div class="flex-shrink-0 w-10 h-10 bg-accent-100 dark:bg-accent-900/30 rounded-lg flex items-center justify-center">
+                <i data-lucide="message-square-warning" class="w-5 h-5 text-accent-600 dark:text-accent-400"></i>
+              </div>
+              <h3 class="text-base font-semibold text-accent-700 dark:text-accent-300" data-ref="https://www.linkedin.com/posts/ronaldngoda_case-studies-how-kenyan-smes-thrived-with-activity-7467483353424986112-bHs4|1">Payment Uncertainty</h3>
+            </div>
+            <p class="text-sm text-gray-700 dark:text-gray-300">
+              Payment delays and endless confirmations create significant friction. The real cost isn't the transaction; it's the uncertainty that disrupts cash flow and operational planning.
+            </p>
+          </div>
+
+          <div class="card-interactive p-6 bg-accent-50/50 dark:bg-accent-900/20 rounded-xl shadow-md">
+            <div class="flex items-center space-x-3 mb-4">
+              <div class="flex-shrink-0 w-10 h-10 bg-accent-100 dark:bg-accent-900/30 rounded-lg flex items-center justify-center">
+                <i data-lucide="map-pin" class="w-5 h-5 text-accent-600 dark:text-accent-400"></i>
+              </div>
+              <h3 class="text-base font-semibold text-accent-700 dark:text-accent-300" data-ref="https://capmad.com/post/structuring-a-fragmented-fleet-the-new-frontier-of-african-road-logistics|52">Poor Visibility</h3>
+            </div>
+            <p class="text-sm text-gray-700 dark:text-gray-300">
+              Lack of real-time tracking and visibility creates operational blind spots that cost money and delay deliveries across fragmented logistics networks.
+            </p>
+          </div>
+        </div>
+
+        <div class="mt-12 pl-4 pr-3 py-3 border-l-4 border-amber-500 bg-amber-50/40 dark:bg-amber-900/30 rounded-r-lg">
+          <p class="text-sm font-medium text-amber-900 dark:text-amber-100 leading-relaxed" data-ref="https://capmad.com/post/structuring-a-fragmented-fleet-the-new-frontier-of-african-road-logistics|52">
+            <i data-lucide="alert-triangle" class="inline-block w-4 h-4 mr-1.5 -mt-0.5"></i>
+            Challenge: The African Continental Free Trade Area (AfCFTA) will only boost intra-African trade if logistics costs and opacity decrease. Large multinational companies increasingly demand more visibility, better traceability, and contractual standardization from their logistics providers.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Demand Analysis Section -->
+    <section id="demand" class="py-20 bg-primary-50/50 dark:bg-gray-800" data-aos="fade-up">
+      <div class="max-w-6xl mx-auto px-6">
+        <h2 class="text-3xl font-bold mb-8 text-primary-700 dark:text-primary-300">
+          Demand Analysis Across Customer Segments
+        </h2>
+
+        <div class="hs-accordion-group space-y-4">
+          <!-- SME Segment -->
+          <div class="hs-accordion card-interactive bg-white/80 backdrop-blur-sm dark:bg-gray-800 rounded-xl border border-gray-200 dark:border-gray-700">
+            <button class="hs-accordion-toggle w-full flex justify-between items-center p-4 text-left hover:bg-primary-50 dark:hover:bg-gray-700/50 transition-colors rounded-xl" id="hs-sme-heading">
+              <div class="flex items-center space-x-4">
+                <div class="flex-shrink-0 w-12 h-12 bg-primary-100 dark:bg-primary-900/30 rounded-lg flex items-center justify-center">
+                  <i data-lucide="building-2" class="w-6 h-6 text-primary-600 dark:text-primary-400"></i>
+                </div>
+                <span class="font-semibold text-lg text-primary-700 dark:text-primary-300">Small &amp; Medium Enterprises (SMEs)</span>
+              </div>
+              <i data-lucide="chevron-down" class="hs-accordion-active:rotate-180 transition-transform duration-300 w-5 h-5 text-primary-600 dark:text-primary-400"></i>
+            </button>
+            <div id="hs-sme-collapse" class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300" aria-labelledby="hs-sme-heading">
+              <div class="p-6 pt-0 space-y-4">
+                <p class="text-gray-700 dark:text-gray-300" data-ref="https://www.academia.edu/114211788/Adaptation_and_Barriers_of_E_commerce_in_Tanzania_Small_and_Medium_Enterprises|144">
+                  In Tanzania, Small and Medium Enterprises (SMEs) represent approximately
+                  <span class="mx-1 px-1.5 py-0.5 rounded-md bg-primary-100 dark:bg-primary-900/30 text-primary-800 dark:text-primary-300 font-semibold text-sm">70%</span>
+                  of all businesses, making them a crucial sector for economic development and job creation.
+                </p>
+                
+                <p class="text-gray-700 dark:text-gray-300" data-ref="https://www.academia.edu/114211788/Adaptation_and_Barriers_of_E_commerce_in_Tanzania_Small_and_Medium_Enterprises|144">
+                  A study on e-commerce adoption in Tanzanian SMEs identified three main categories of barriers: technical, legal/regulatory, and financial. The most significant barrier was found to be lack of Internet security, followed by limited use of Internet banking and web portals.
+                </p>
+
+                <p class="text-gray-700 dark:text-gray-300" data-ref="https://www.internationalscholarsjournals.com/articles/challenges-and-opportunities-of-tanzanian-smes-in-adapting-supply-chain-management.pdf|43">
+                  SMEs in Tanzania, besides facing traditional hardships in finance, misalign the phenomenon of supply chain management, thus failing to find a proper place in digital logistics adoption.
+                </p>
+
+                <div class="pl-4 pr-3 py-3 border-l-4 border-primary-500 bg-primary-50/40 dark:bg-primary-900/30 rounded-r-lg">
+                  <p class="text-sm font-medium text-primary-900 dark:text-primary-100 leading-relaxed" data-ref="https://ticgl.com/tag/smegrowthtz/|97">
+                    <i data-lucide="info" class="inline-block w-4 h-4 mr-1.5 -mt-0.5"></i>
+                    SME Tax Burden: SMEs in Tanzania face a 30% corporate tax and 25% import duties, far above Rwanda's 15% SME tax rate, draining profits and limiting investment in digital tools.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Individual Shippers -->
+          <div class="hs-accordion card-interactive bg-white/80 backdrop-blur-sm dark:bg-gray-800 rounded-xl border border-gray-200 dark:border-gray-700">
+            <button class="hs-accordion-toggle w-full flex justify-between items-center p-4 text-left hover:bg-primary-50 dark:hover:bg-gray-700/50 transition-colors rounded-xl" id="hs-individual-heading">
+              <div class="flex items-center space-x-4">
+                <div class="flex-shrink-0 w-12 h-12 bg-accent-100 dark:bg-accent-900/30 rounded-lg flex items-center justify-center">
+                  <i data-lucide="user" class="w-6 h-6 text-accent-600 dark:text-accent-400"></i>
+                </div>
+                <span class="font-semibold text-lg text-accent-700 dark:text-accent-300">Individual Shippers</span>
+              </div>
+              <i data-lucide="chevron-down" class="hs-accordion-active:rotate-180 transition-transform duration-300 w-5 h-5 text-accent-600 dark:text-accent-400"></i>
+            </button>
+            <div id="hs-individual-collapse" class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300" aria-labelledby="hs-individual-heading">
+              <div class="p-6 pt-0 space-y-4">
+                <p class="text-gray-700 dark:text-gray-300" data-ref="https://dl.acm.org/doi/10.1145/3616386|145">
+                  A pilot survey in Tanzania's Kagera region identified a high demand for human intermediaries ('wakalas') to help community members use digital financial services (DFS). A majority of participants expressed interest in ICTs like M-Pesa, Tigo Pesa, Airtel Money, and LUKU.
+                </p>
+
+                <p class="text-gray-700 dark:text-gray-300" data-ref="https://dl.acm.org/doi/10.1145/3616386|145">
+                  The primary users of wakala intermediation services are individuals with lower literacy, older adults, women, and youth who cannot read or write. Age-related challenges include lower vision making phone interfaces difficult to access without assistance.
+                </p>
+
+                <p class="text-gray-700 dark:text-gray-300" data-ref="https://dl.acm.org/doi/10.1145/3616386|145">
+                  Trust dynamics between wakalas and their customers are fragile. While some customers build long-term loyalty based on trust, others are wary of having tasks performed on their behalf, especially those involving sensitive information like passwords.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Large Enterprises -->
+          <div class="hs-accordion card-interactive bg-white/80 backdrop-blur-sm dark:bg-gray-800 rounded-xl border border-gray-200 dark:border-gray-700">
+            <button class="hs-accordion-toggle w-full flex justify-between items-center p-4 text-left hover:bg-primary-50 dark:hover:bg-gray-700/50 transition-colors rounded-xl" id="hs-enterprise-heading">
+              <div class="flex items-center space-x-4">
+                <div class="flex-shrink-0 w-12 h-12 bg-primary-100 dark:bg-primary-900/30 rounded-lg flex items-center justify-center">
+                  <i data-lucide="briefcase" class="w-6 h-6 text-primary-600 dark:text-primary-400"></i>
+                </div>
+                <span class="font-semibold text-lg text-primary-700 dark:text-primary-300">Large Enterprises</span>
+              </div>
+              <i data-lucide="chevron-down" class="hs-accordion-active:rotate-180 transition-transform duration-300 w-5 h-5 text-primary-600 dark:text-primary-400"></i>
+            </button>
+            <div id="hs-enterprise-collapse" class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300" aria-labelledby="hs-enterprise-heading">
+              <div class="p-6 pt-0 space-y-4">
+                <p class="text-gray-700 dark:text-gray-300" data-ref="https://africasignal.com/lori-systems-building-the-digital-highways-for-africas-cargo/|36">
+                  Lori Systems' primary customer base consists of large enterprises in the FMCG, agriculture, manufacturing, and construction sectors. These enterprises require digital booking with clear pricing, real-time GPS tracking, carrier vetting, and route planning.
+                </p>
+
+                <p class="text-gray-700 dark:text-gray-300" data-ref="https://africasignal.com/lori-systems-building-the-digital-highways-for-africas-cargo/|36">
+                  The platform addresses key market pain points by offering digital booking with clear pricing, real-time GPS tracking, carrier vetting, and route planning to reduce empty return trips. It also provides issue resolution support and requires cargo insurance for participating trucks.
+                </p>
+
+                <p class="text-gray-700 dark:text-gray-300" data-ref="https://ehsafricalogistics.com/navigating-africas-new-logistics-landscape/|51">
+                  Large multinational companies in sectors like food, cement, retail, and mining are increasingly demanding more visibility, better traceability, and contractual standardization from their logistics providers.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Competitive Landscape Section -->
+    <section id="competition" class="py-20 bg-white/80 dark:bg-gray-900" data-aos="fade-up">
+      <div class="max-w-6xl mx-auto px-6">
+        <h2 class="text-3xl font-bold mb-8 text-primary-700 dark:text-primary-300">
+          Competitive Landscape Analysis
+        </h2>
+
+        <div class="grid md:grid-cols-2 gap-8 mb-12">
+          <div class="space-y-6">
+            <p class="text-gray-700 dark:text-gray-300" data-ref="https://www.motawill.com/top-10-logistics-platforms-in-africa/|24">
+              The African logistics technology market is valued at approximately USD
+              <span class="mx-1 px-1.5 py-0.5 rounded-md bg-primary-100 dark:bg-primary-900/30 text-primary-800 dark:text-primary-300 font-semibold text-sm">170 billion</span>,
+              with growth driven by e-commerce, demand for supply chain optimization, infrastructure investments, and the adoption of digital technologies like IoT and AI.
+            </p>
+
+            <p class="text-gray-700 dark:text-gray-300" data-ref="https://www.linkedin.com/pulse/how-digital-freight-platforms-revolutionizing-africas-gqu1f|37">
+              Digital freight platforms in Africa function as tech-driven intermediaries connecting shippers with transporters. Key features include matching cargo with available trucks, offering transparent pricing, enabling real-time tracking, and digitizing documentation and payments.
+            </p>
+
+            <div class="pl-4 pr-3 py-3 border-l-4 border-primary-500 bg-primary-50/40 dark:bg-primary-900/30 rounded-r-lg">
+              <p class="text-sm font-medium text-primary-900 dark:text-primary-100 leading-relaxed" data-ref="https://africasignal.com/lori-systems-building-the-digital-highways-for-africas-cargo/|36">
+                <i data-lucide="trending-up" class="inline-block w-4 h-4 mr-1.5 -mt-0.5"></i>
+                Scale Achievement: Lori Systems has scaled to connect over 20,000 trucks and coordinates freight across 12 countries. Its main operating hubs are located in Kenya (core), Nigeria (West Africa), and Uganda (East Africa).
+              </p>
+            </div>
+          </div>
+
+          <img
+            src="https://cdn.qwenlm.ai/da968bd4-7d62-41ca-9259-a0cbc27441c7/57b865c1-280b-494f-8fdc-966b858d8a0d/3db2254e-cf4e-44e0-aa9f-fc36130bdd37.png?key=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyZXNvdXJjZV91c2VyX2lkIjoiZGE5NjhiZDQtN2Q2Mi00MWNhLTkyNTktYTBjYmMyNzQ0MWM3IiwicmVzb3VyY2VfaWQiOiI1N2I4NjVjMS0yODBiLTQ5NGYtOGZkYy05NjZiODU4ZDhhMGQiLCJyZXNvdXJjZV9jaGF0X2lkIjpudWxsfQ.7-koqrtS1FMHpoVz0LfLsbdIxC9wttu7iy_fAcb98jM"
+            alt="Business diagram illustration on a clean white background (#FFFFFF). Center focal point: a large circular icon in primary blue (#1E40AF) with the text 'Digital Freight Platform' in white, surrounded by three curved arrows in accent green (#059669) forming a clockwise rotation. Four rectangular nodes arranged in a square pattern around the center: top-left node in dark gray (#374151) labeled 'Shippers' with a briefcase icon, top-right node in dark gray labeled 'Transporters' with a truck icon, bottom-left node in dark gray labeled 'Cargo' with stacked boxes icon, bottom-right node in dark gray labeled 'Payments' with currency icon. Each node connected to the center platform via thin gray lines (#9CA3AF). Background gradient transitioning from light gray (#F3F4F6) at top to slightly darker gray (#E5E7EB) at bottom. Overall composition conveys connectivity, digital flow, and platform centrality with clear visual hierarchy and professional color scheme."
+            class="w-full rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300"
+          />
+        </div>
+
+        <div class="space-y-6 mb-12">
+          <h3 class="text-2xl font-semibold text-primary-700 dark:text-primary-300" data-ref="https://africasignal.com/lori-systems-building-the-digital-highways-for-africas-cargo/|36">
+            Leading Digital Freight Platforms
+          </h3>
+
+          <div class="grid md:grid-cols-2 gap-6">
+            <div class="card-interactive p-6 bg-primary-50/50 dark:bg-primary-900/20 rounded-xl shadow-md">
+              <h4 class="text-lg font-semibold text-primary-700 dark:text-primary-300 mb-3">Lori Systems (Kenya)</h4>
+              <p class="text-sm text-gray-700 dark:text-gray-300 mb-3">
+                Operates as a digital freight marketplace connecting shippers with vetted truck transporters. Does not own trucks and focuses on digitizing long-haul trucking in Africa.
+              </p>
+              <ul class="text-sm text-gray-700 dark:text-gray-300 space-y-2">
+                <li class="flex items-start">
+                  <i data-lucide="check" class="w-4 h-4 text-primary-600 dark:text-primary-400 mr-2 mt-0.5 flex-shrink-0"></i>
+                  <span>Connects over 20,000 trucks across 12 countries</span>
+                </li>
+                <li class="flex items-start">
+                  <i data-lucide="check" class="w-4 h-4 text-primary-600 dark:text-primary-400 mr-2 mt-0.5 flex-shrink-0"></i>
+                  <span>Active cross-border lanes: Rwanda, Tanzania, South Sudan, DRC, Ghana</span>
+                </li>
+                <li class="flex items-start">
+                  <i data-lucide="check" class="w-4 h-4 text-primary-600 dark:text-primary-400 mr-2 mt-0.5 flex-shrink-0"></i>
+                  <span>Core value: Cost-effective, reliable, seamless operations</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="card-interactive p-6 bg-accent-50/50 dark:bg-accent-900/20 rounded-xl shadow-md">
+              <h4 class="text-lg font-semibold text-accent-700 dark:text-accent-300 mb-3">Kobo360 (Nigeria)</h4>
+              <p class="text-sm text-gray-700 dark:text-gray-300 mb-3" data-ref="https://ehsafricalogistics.com/navigating-africas-new-logistics-landscape/|51">
+                App matches truck owners and drivers with cargo companies' needs to reduce empty runs and lower costs. Handles scheduling and payment digitally, providing features like insurance for drivers and a 24-hour rescue team.
+              </p>
+              <ul class="text-sm text-gray-700 dark:text-gray-300 space-y-2">
+                <li class="flex items-start">
+                  <i data-lucide="check" class="w-4 h-4 text-accent-600 dark:text-accent-400 mr-2 mt-0.5 flex-shrink-0"></i>
+                  <span>Operates a fleet of 30,000 trucks across multiple countries</span>
+                </li>
+                <li class="flex items-start">
+                  <i data-lucide="check" class="w-4 h-4 text-accent-600 dark:text-accent-400 mr-2 mt-0.5 flex-shrink-0"></i>
+                  <span>Key markets: Burkina Faso, Côte d'Ivoire, Ghana, Kenya, Nigeria, Togo, Uganda</span>
+                </li>
+                <li class="flex items-start">
+                  <i data-lucide="check" class="w-4 h-4 text-accent-600 dark:text-accent-400 mr-2 mt-0.5 flex-shrink-0"></i>
+                  <span>Raised significant Series A funding led by Goldman Sachs</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="card-interactive p-6 bg-primary-50/50 dark:bg-primary-900/20 rounded-xl shadow-md">
+              <h4 class="text-lg font-semibold text-primary-700 dark:text-primary-300 mb-3">Amitruck (Kenya)</h4>
+              <p class="text-sm text-gray-700 dark:text-gray-300 mb-3" data-ref="https://startup.google.com/alumni/stories/amitruck/|72">
+                Connects over 8,000 delivery trucks with cargo owners. Core value proposition: Reduce shipping costs by 40%, cut out intermediaries, and increase transparency through competitive bidding.
+              </p>
+              <ul class="text-sm text-gray-700 dark:text-gray-300 space-y-2">
+                <li class="flex items-start">
+                  <i data-lucide="check" class="w-4 h-4 text-primary-600 dark:text-primary-400 mr-2 mt-0.5 flex-shrink-0"></i>
+                  <span>Operating in Kenya, Uganda, Rwanda, and Tanzania</span>
+                </li>
+                <li class="flex items-start">
+                  <i data-lucide="check" class="w-4 h-4 text-primary-600 dark:text-primary-400 mr-2 mt-0.5 flex-shrink-0"></i>
+                  <span>Raised $4 million seed funding in early 2023</span>
+                </li>
+                <li class="flex items-start">
+                  <i data-lucide="check" class="w-4 h-4 text-primary-600 dark:text-primary-400 mr-2 mt-0.5 flex-shrink-0"></i>
+                  <span>Every transaction covered by insurance service</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="card-interactive p-6 bg-accent-50/50 dark:bg-accent-900/20 rounded-xl shadow-md">
+              <h4 class="text-lg font-semibold text-accent-700 dark:text-accent-300 mb-3">Mover Africa (Kenya)</h4>
+              <p class="text-sm text-gray-700 dark:text-gray-300 mb-3" data-ref="https://moverafrica.com/mover-africa-in-kenya/|30">
+                Transforming Kenya's trucking marketplace with reliable, on-demand transport services for businesses and communities.
+              </p>
+              <ul class="text-sm text-gray-700 dark:text-gray-300 space-y-2">
+                <li class="flex items-start">
+                  <i data-lucide="check" class="w-4 h-4 text-accent-600 dark:text-accent-400 mr-2 mt-0.5 flex-shrink-0"></i>
+                  <span>On-demand trucking marketplace model</span>
+                </li>
+                <li class="flex items-start">
+                  <i data-lucide="check" class="w-4 h-4 text-accent-600 dark:text-accent-400 mr-2 mt-0.5 flex-shrink-0"></i>
+                  <span>Serves both B2B and B2C segments</span>
+                </li>
+                <li class="flex items-start">
+                  <i data-lucide="check" class="w-4 h-4 text-accent-600 dark:text-accent-400 mr-2 mt-0.5 flex-shrink-0"></i>
+                  <span>Reliable transport services across Kenya</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="pl-4 pr-3 py-3 border-l-4 border-amber-500 bg-amber-50/40 dark:bg-amber-900/30 rounded-r-lg">
+          <p class="text-sm font-medium text-amber-900 dark:text-amber-100 leading-relaxed" data-ref="https://africasignal.com/lori-systems-building-the-digital-highways-for-africas-cargo/|36">
+            <i data-lucide="alert-triangle" class="inline-block w-4 h-4 mr-1.5 -mt-0.5"></i>
+            Cash Flow Challenge: In 2025, Lori Systems announced a bridge funding round to support its shift towards profitability, indicating it faced cash-flow pressure similar to other digital freight startups. This highlights the operational complexity of managing working capital due to late shipper payments.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Regulatory Environment Section -->
+    <section id="regulation" class="py-20 bg-accent-50/50 dark:bg-gray-800" data-aos="fade-up">
+      <div class="max-w-6xl mx-auto px-6">
+        <h2 class="text-3xl font-bold mb-8 text-accent-700 dark:text-accent-300">
+          Regulatory Environment &amp; Compliance
+        </h2>
+
+        <div class="grid md:grid-cols-2 gap-8 mb-12">
+          <div class="space-y-6">
+            <h3 class="text-xl font-semibold text-accent-700 dark:text-accent-300" data-ref="https://www.lexology.com/library/detail.aspx?g=b237bda9-505b-4e8d-a541-305d05d996e5|106">
+              Tanzania National Regulations
+            </h3>
+            
+            <p class="text-gray-700 dark:text-gray-300">
+              The Land Transport Regulatory Authority (LATRA) is an autonomous regulatory body corporate established by the Land Transport Regulatory Authority Act, replacing the former SUMATRA regulatory framework.
+            </p>
+
+            <p class="text-gray-700 dark:text-gray-300" data-ref="https://dailynews.co.tz/latra-issues-388715-licenses-as-it-expands-the-use-of-digital-systems-to-oversee-land-transport-services/|127">
+              LATRA issued a total of
+              <span class="mx-1 px-1.5 py-0.5 rounded-md bg-accent-100 dark:bg-accent-900/30 text-accent-800 dark:text-accent-300 font-semibold text-sm">388,715</span>
+              transport licenses, representing a 55 percent increase, demonstrating the growing regulatory framework for transport operators.
+            </p>
+
+            <div class="pl-4 pr-3 py-3 border-l-4 border-accent-500 bg-accent-50/40 dark:bg-accent-900/30 rounded-r-lg">
+              <p class="text-sm font-medium text-accent-900 dark:text-accent-100 leading-relaxed" data-ref="http://www.wiwofreight.com/compliance|126">
+                <i data-lucide="circle-check" class="inline-block w-4 h-4 mr-1.5 -mt-0.5"></i>
+                Compliance Requirement: Companies like Wiwo Freight hold valid road transport operator licenses issued by LATRA, authorizing them to provide freight transportation services across Tanzania.
+              </p>
+            </div>
+          </div>
+
+          <div class="space-y-6">
+            <h3 class="text-xl font-semibold text-accent-700 dark:text-accent-300" data-ref="https://www.tcra.go.tz/index.php/download/sw-1727101237-Spectrum%20Management%20Strategy%20-%202024:2025-2034:2035.pdf|14">
+              Communication &amp; Digital Licensing
+            </h3>
+            
+            <p class="text-gray-700 dark:text-gray-300">
+              Tanzania adopted a Converged Licensing Framework that supports technology and communication services, with TCRA expanding its digital landscape with new licenses across various categories.
+            </p>
+
+            <p class="text-gray-700 dark:text-gray-300" data-ref="https://www.thecitizen.co.tz/tanzania/news/national/tcra-expands-digital-landscape-with-38-new-licenses-and-advances-in-ict-regulation-4828960|12">
+              In Q3 2024, TCRA issued
+              <span class="mx-1 px-1.5 py-0.5 rounded-md bg-accent-100 dark:bg-accent-900/30 text-accent-800 dark:text-accent-300 font-semibold text-sm">38 new licenses</span>
+              across various categories and markets, including 15 for content services and five for courier services.
+            </p>
+
+            <div class="pl-4 pr-3 py-3 border-l-4 border-amber-500 bg-amber-50/40 dark:bg-amber-900/30 rounded-r-lg">
+              <p class="text-sm font-medium text-amber-900 dark:text-amber-100 leading-relaxed" data-ref="https://cipesa.org/2018/04/tanzania-enacts-regressive-online-content-regulations/|13">
+                <i data-lucide="triangle-alert" class="inline-block w-4 h-4 mr-1.5 -mt-0.5"></i>
+                Regulatory Challenge: Tanzania Issues Regressive Online Content Regulations requiring applicants to provide company details including physical address, shareholding, citizenship of shareholders/directors and tax information, potentially creating compliance barriers for digital platforms.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="mb-12">
+          <h3 class="text-2xl font-semibold text-accent-700 dark:text-accent-300 mb-6" data-ref="https://www.facebook.com/ndaviral/posts/on-this-day-1-july-2010-the-landscape-of-regional-commerce-experienced-an-absolu/1442495271231407/|16">
+            East African Community (EAC) Cross-Border Framework
+          </h3>
+
+          <div class="hs-accordion-group space-y-4">
+            <div class="hs-accordion card-interactive bg-white/80 backdrop-blur-sm dark:bg-gray-800 rounded-xl border border-gray-200 dark:border-gray-700">
+              <button class="hs-accordion-toggle w-full flex justify-between items-center p-4 text-left hover:bg-accent-50 dark:hover:bg-gray-700/50 transition-colors rounded-xl" id="hs-eac-heading">
+                <div class="flex items-center space-x-4">
+                  <div class="flex-shrink-0 w-12 h-12 bg-accent-100 dark:bg-accent-900/30 rounded-lg flex items-center justify-center">
+                    <i data-lucide="globe" class="w-6 h-6 text-accent-600 dark:text-accent-400"></i>
+                  </div>
+                  <span class="font-semibold text-lg text-accent-700 dark:text-accent-300">EAC Common Market Protocol</span>
+                </div>
+                <i data-lucide="chevron-down" class="hs-accordion-active:rotate-180 transition-transform duration-300 w-5 h-5 text-accent-600 dark:text-accent-400"></i>
+              </button>
+              <div id="hs-eac-collapse" class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300" aria-labelledby="hs-eac-heading">
+                <div class="p-6 pt-0 space-y-4">
+                  <p class="text-gray-700 dark:text-gray-300">
+                    The EAC Common Market Protocol allows free movement of goods, labor, and capital within member states (Kenya, Tanzania, Uganda, Rwanda, Burundi, South Sudan, DR Congo).
+                  </p>
+                  <p class="text-gray-700 dark:text-gray-300" data-ref="https://www.tralac.org/resources/our-resources/4812-eac-legal-texts-and-policy-documents.html|19">
+                    The Protocol on the Establishment of the EAC Common Market was signed in November 2009 and entered into force in 2010. Partner States are in the process of harmonizing regulations to facilitate seamless cross-border trade.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="hs-accordion card-interactive bg-white/80 backdrop-blur-sm dark:bg-gray-800 rounded-xl border border-gray-200 dark:border-gray-700">
+              <button class="hs-accordion-toggle w-full flex justify-between items-center p-4 text-left hover:bg-accent-50 dark:hover:bg-gray-700/50 transition-colors rounded-xl" id="hs-customs-heading">
+                <div class="flex items-center space-x-4">
+                  <div class="flex-shrink-0 w-12 h-12 bg-accent-100 dark:bg-accent-900/30 rounded-lg flex items-center justify-center">
+                    <i data-lucide="package" class="w-6 h-6 text-accent-600 dark:text-accent-400"></i>
+                  </div>
+                  <span class="font-semibold text-lg text-accent-700 dark:text-accent-300">Customs &amp; Bond Systems</span>
+                </div>
+                <i data-lucide="chevron-down" class="hs-accordion-active:rotate-180 transition-transform duration-300 w-5 h-5 text-accent-600 dark:text-accent-400"></i>
+              </button>
+              <div id="hs-customs-collapse" class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300" aria-labelledby="hs-customs-heading">
+                <div class="p-6 pt-0 space-y-4">
+                  <p class="text-gray-700 dark:text-gray-300" data-ref="https://www.eac.int/?view=category&id=2|129">
+                    The EAC Customs Bond (EAC Bond++) is a groundbreaking scheme designed to transform cross-border trade within the EAC by eliminating the need for multiple customs bonds.
+                  </p>
+                  <p class="text-gray-700 dark:text-gray-300" data-ref="https://www.youtube.com/watch?v=Hz8mVHAGG70|98">
+                    Importers within the East African Community will no longer be required to process multiple customs bonds to move goods across the borders of each of the partner states.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="hs-accordion card-interactive bg-white/80 backdrop-blur-sm dark:bg-gray-800 rounded-xl border border-gray-200 dark:border-gray-700">
+              <button class="hs-accordion-toggle w-full flex justify-between items-center p-4 text-left hover:bg-accent-50 dark:hover:bg-gray-700/50 transition-colors rounded-xl" id="hs-barriers-heading">
+                <div class="flex items-center space-x-4">
+                  <div class="flex-shrink-0 w-12 h-12 bg-accent-100 dark:bg-accent-900/30 rounded-lg flex items-center justify-center">
+                    <i data-lucide="octagon-alert" class="w-6 h-6 text-accent-600 dark:text-accent-400"></i>
+                  </div>
+                  <span class="font-semibold text-lg text-accent-700 dark:text-accent-300">Non-Tariff Barriers</span>
+                </div>
+                <i data-lucide="chevron-down" class="hs-accordion-active:rotate-180 transition-transform duration-300 w-5 h-5 text-accent-600 dark:text-accent-400"></i>
+              </button>
+              <div id="hs-barriers-collapse" class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300" aria-labelledby="hs-barriers-heading">
+                <div class="p-6 pt-0 space-y-4">
+                  <p class="text-gray-700 dark:text-gray-300" data-ref="https://www.tradebarriers.org/active_complaints/limit/page:3/resolved:1/sort:date_of_incident/direction:asc|17">
+                    Republic of Rwanda is charging unharmonized flat rates for vehicles transiting through the Rwanda borders, which is against the agreed protocols under EAC frameworks.
+                  </p>
+                  <p class="text-gray-700 dark:text-gray-300" data-ref="https://www.theeastafrican.co.ke/tea/business-tech/high-costs-delays-as-rwanda-truckers-stopped-over-covid-19-2370286|6">
+                    A significant cross-border transport impasse exists between Rwanda and Tanzania over COVID-19 testing for drivers. Tanzanian authorities refuse to accept Rwandan certificates, requiring their own tests which take four to seven days, causing major delays.
+                  </p>
+                  <div class="pl-4 pr-3 py-3 border-l-4 border-amber-500 bg-amber-50/40 dark:bg-amber-900/30 rounded-r-lg">
+                    <p class="text-sm font-medium text-amber-900 dark:text-amber-100 leading-relaxed" data-ref="https://www.trade.go.ke/eac-leaders-set-june-2026-deadline-eliminate-non-tariff-barriers|59">
+                      <i data-lucide="clock" class="inline-block w-4 h-4 mr-1.5 -mt-0.5"></i>
+                      Deadline: EAC Leaders Set June 2026 Deadline to Eliminate Non-Tariff Barriers (NTBs), directing Partner States to resolve all NTBs by 30 June 2026.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="pl-4 pr-3 py-3 border-l-4 border-primary-500 bg-primary-50/40 dark:bg-primary-900/30 rounded-r-lg">
+          <p class="text-sm font-medium text-primary-900 dark:text-primary-100 leading-relaxed" data-ref="https://capmad.com/post/structuring-a-fragmented-fleet-the-new-frontier-of-african-road-logistics|52">
+            <i data-lucide="info" class="inline-block w-4 h-4 mr-1.5 -mt-0.5"></i>
+            Key Insight: McKinsey analysis suggests that pushing too quickly for minimum fleet size or capital rules may exclude thousands of operators without solving productivity issues if digital tools are not in place. Conversely, ignoring the structuring of trip, fuel, and maintenance data leaves banks lending blind and policymakers with poor visibility on actual flows.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Payment Infrastructure Section -->
+    <section id="payment" class="py-20 bg-white/80 dark:bg-gray-900" data-aos="fade-up">
+      <div class="max-w-6xl mx-auto px-6">
+        <h2 class="text-3xl font-bold mb-8 text-primary-700 dark:text-primary-300">
+          Payment Infrastructure &amp; Digital Finance
+        </h2>
+
+        <div class="grid md:grid-cols-2 gap-8 items-start mb-12">
+          <div class="space-y-6">
+            <p class="text-gray-700 dark:text-gray-300" data-ref="https://clickpesa.com/category/cross-border-payments/|21">
+              Starting 1st August 2025, all international money transfers into Tanzania will be required to be processed through the Tanzania Instant Payment System, marking a significant shift towards digital payment infrastructure.
+            </p>
+
+            <p class="text-gray-700 dark:text-gray-300" data-ref="https://www.fsdt.or.tz/wp-content/uploads/2025/03/Banking-Sector_Insights_TBA_FSDT.pdf|117">
+              In 2024, over
+              <span class="mx-1 px-1.5 py-0.5 rounded-md bg-primary-100 dark:bg-primary-900/30 text-primary-800 dark:text-primary-300 font-semibold text-sm">4.7 billion</span>
+              mobile money payments were recorded, moving over
+              <span class="mx-1 px-1.5 py-0.5 rounded-md bg-primary-100 dark:bg-primary-900/30 text-primary-800 dark:text-primary-300 font-semibold text-sm">145.1 trillion TZS</span>
+              through the systems, demonstrating the scale of digital payment adoption.
+            </p>
+
+            <div class="pl-4 pr-3 py-3 border-l-4 border-primary-500 bg-primary-50/40 dark:bg-primary-900/30 rounded-r-lg">
+              <p class="text-sm font-medium text-primary-900 dark:text-primary-100 leading-relaxed" data-ref="https://www.researchgate.net/publication/392813029_Implementing_Security_Models_in_Tanzania's_Mobile_Payment_Gateways|147">
+                <i data-lucide="trending-up" class="inline-block w-4 h-4 mr-1.5 -mt-0.5"></i>
+                Growth Metrics: Tanzania's mobile money market experienced significant growth, with active users reaching 51.7 million in 2023 and total transaction volume increasing from 3.77 billion in 2020 to over 10.27 billion in 2024.
+              </p>
+            </div>
+          </div>
+
+          <div class="card-interactive p-6 rounded-xl shadow-md bg-gradient-to-br from-primary-50 to-accent-50 dark:from-primary-900/20 dark:to-accent-900/20">
+            <h3 class="text-xl font-semibold text-primary-700 dark:text-primary-300 mb-4" data-ref="https://www.researchgate.net/publication/392813029_Implementing_Security_Models_in_Tanzania's_Mobile_Payment_Gateways|147">
+              Mobile Money Market Share
+            </h3>
+            <div class="space-y-3">
+              <div>
+                <div class="flex justify-between mb-1">
+                  <span class="text-sm font-medium text-gray-700 dark:text-gray-300">M-Pesa (Vodacom)</span>
+                  <span class="text-sm font-semibold text-primary-600 dark:text-primary-400">~40%</span>
+                </div>
+                <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2">
+                  <div class="bg-primary-500 dark:bg-primary-400 h-2 rounded-full" style="width: 40%"></div>
+                </div>
+              </div>
+              <div>
+                <div class="flex justify-between mb-1">
+                  <span class="text-sm font-medium text-gray-700 dark:text-gray-300">Mixx/Tigo Pesa</span>
+                  <span class="text-sm font-semibold text-accent-600 dark:text-accent-400">~31%</span>
+                </div>
+                <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2">
+                  <div class="bg-accent-500 dark:bg-accent-400 h-2 rounded-full" style="width: 31%"></div>
+                </div>
+              </div>
+              <div>
+                <div class="flex justify-between mb-1">
+                  <span class="text-sm font-medium text-gray-700 dark:text-gray-300">Airtel Money</span>
+                  <span class="text-sm font-semibold text-primary-600 dark:text-primary-400">~12%</span>
+                </div>
+                <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2">
+                  <div class="bg-primary-500 dark:bg-primary-400 h-2 rounded-full" style="width: 12%"></div>
+                </div>
+              </div>
+              <div>
+                <div class="flex justify-between mb-1">
+                  <span class="text-sm font-medium text-gray-700 dark:text-gray-300">Other Operators</span>
+                  <span class="text-sm font-semibold text-gray-600 dark:text-gray-400">~17%</span>
+                </div>
+                <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2">
+                  <div class="bg-gray-500 dark:bg-gray-400 h-2 rounded-full" style="width: 17%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mb-12">
+          <h3 class="text-2xl font-semibold text-primary-700 dark:text-primary-300 mb-6">
+            Cross-Border Payment Challenges
+          </h3>
+
+          <div class="hs-accordion-group space-y-4">
+            <div class="hs-accordion card-interactive bg-white/80 backdrop-blur-sm dark:bg-gray-800 rounded-xl border border-gray-200 dark:border-gray-700">
+              <button class="hs-accordion-toggle w-full flex justify-between items-center p-4 text-left hover:bg-primary-50 dark:hover:bg-gray-700/50 transition-colors rounded-xl" id="hs-currency-heading">
+                <div class="flex items-center space-x-4">
+                  <div class="flex-shrink-0 w-12 h-12 bg-primary-100 dark:bg-primary-900/30 rounded-lg flex items-center justify-center">
+                    <i data-lucide="dollar-sign" class="w-6 h-6 text-primary-600 dark:text-primary-400"></i>
+                  </div>
+                  <span class="font-semibold text-lg text-primary-700 dark:text-primary-300">Currency Fragmentation</span>
+                </div>
+                <i data-lucide="chevron-down" class="hs-accordion-active:rotate-180 transition-transform duration-300 w-5 h-5 text-primary-600 dark:text-primary-400"></i>
+              </button>
+              <div id="hs-currency-collapse" class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300" aria-labelledby="hs-currency-heading">
+                <div class="p-6 pt-0 space-y-4">
+                  <p class="text-gray-700 dark:text-gray-300" data-ref="https://citizen.digital/article/how-east-african-traders-are-losing-billions-to-a-broken-cross-border-payment-system-n383223|3">
+                    There is a major issue of currency and market fragmentation across East Africa. Most local currencies are not directly convertible with one another, creating a complex patchwork of conflicting rules from each country's central bank, which complicates and increases the cost of cross-border transactions.
+                  </p>
+                  <p class="text-gray-700 dark:text-gray-300">
+                    A significant portion of East African trade is settled in US dollars via correspondent banks in New York, causing delays (hours to days) and high fees that erode trader margins. This system is described as a 'dollar trap'.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="hs-accordion card-interactive bg-white/80 backdrop-blur-sm dark:bg-gray-800 rounded-xl border border-gray-200 dark:border-gray-700">
+              <button class="hs-accordion-toggle w-full flex justify-between items-center p-4 text-left hover:bg-primary-50 dark:hover:bg-gray-700/50 transition-colors rounded-xl" id="hs-regulatory-heading">
+                <div class="flex items-center space-x-4">
+                  <div class="flex-shrink-0 w-12 h-12 bg-accent-100 dark:bg-accent-900/30 rounded-lg flex items-center justify-center">
+                    <i data-lucide="file-text" class="w-6 h-6 text-accent-600 dark:text-accent-400"></i>
+                  </div>
+                  <span class="font-semibold text-lg text-accent-700 dark:text-accent-300">Regulatory Fragmentation</span>
+                </div>
+                <i data-lucide="chevron-down" class="hs-accordion-active:rotate-180 transition-transform duration-300 w-5 h-5 text-accent-600 dark:text-accent-400"></i>
+              </button>
+              <div id="hs-regulatory-collapse" class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300" aria-labelledby="hs-regulatory-heading">
+                <div class="p-6 pt-0 space-y-4">
+                  <p class="text-gray-700 dark:text-gray-300" data-ref="https://africanenda.org/urgent-need-to-harmonize-payment-service-regulations-and-achieve-instant-cross-border-payments-in-africa/|22">
+                    Cross-border payments in Africa remain cumbersome because regulatory frameworks differ widely across countries. Licensing requirements, reporting obligations, and compliance standards vary significantly, creating operational complexity for digital platforms.
+                  </p>
+                  <p class="text-gray-700 dark:text-gray-300" data-ref="https://www.microsave.net/2025/07/09/cross-border-payments-in-africa-what-is-changing-and-why-it-matters/|23">
+                    The market faces several challenges, which include high remittance costs of
+                    <span class="mx-1 px-1.5 py-0.5 rounded-md bg-accent-100 dark:bg-accent-900/30 text-accent-800 dark:text-accent-300 font-semibold text-sm">7.4% to 8.3%</span>,
+                    regulatory fragmentation, foreign exchange liquidity constraints, and limited interoperability between payment systems.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="hs-accordion card-interactive bg-white/80 backdrop-blur-sm dark:bg-gray-800 rounded-xl border border-gray-200 dark:border-gray-700">
+              <button class="hs-accordion-toggle w-full flex justify-between items-center p-4 text-left hover:bg-primary-50 dark:hover:bg-gray-700/50 transition-colors rounded-xl" id="hs-fraud-heading">
+                <div class="flex items-center space-x-4">
+                  <div class="flex-shrink-0 w-12 h-12 bg-primary-100 dark:bg-primary-900/30 rounded-lg flex items-center justify-center">
+                    <i data-lucide="shield-alert" class="w-6 h-6 text-primary-600 dark:text-primary-400"></i>
+                  </div>
+                  <span class="font-semibold text-lg text-primary-700 dark:text-primary-300">Fraud &amp; Security Concerns</span>
+                </div>
+                <i data-lucide="chevron-down" class="hs-accordion-active:rotate-180 transition-transform duration-300 w-5 h-5 text-primary-600 dark:text-primary-400"></i>
+              </button>
+              <div id="hs-fraud-collapse" class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300" aria-labelledby="hs-fraud-heading">
+                <div class="p-6 pt-0 space-y-4">
+                  <p class="text-gray-700 dark:text-gray-300" data-ref="https://www.researchgate.net/publication/392813029_Implementing_Security_Models_in_Tanzania's_Mobile_Payment_Gateways|147">
+                    Fraud and security incidents are a growing concern. In Q1 2025, TCRA reported a
+                    <span class="mx-1 px-1.5 py-0.5 rounded-md bg-primary-100 dark:bg-primary-900/30 text-primary-800 dark:text-primary-300 font-semibold text-sm">33%</span>
+                    increase in fraud cases compared to Q4 2024. In Q4 2023 alone, there were 21,788 recorded mobile money fraud incidents, a 73% increase from the previous year.
+                  </p>
+                  <p class="text-gray-700 dark:text-gray-300">
+                    A major regulatory enforcement action occurred in early 2024 when the Tanzania Communications Regulatory Authority (TCRA) fined five telecom companies—Airtel, Tigo, Vodacom, Halotel, and TTCL—a total of approximately Tsh 2.085 billion for SIM registration violations that enabled widespread fraud.
+                  </p>
+                  <div class="pl-4 pr-3 py-3 border-l-4 border-amber-500 bg-amber-50/40 dark:bg-amber-900/30 rounded-r-lg">
+                    <p class="text-sm font-medium text-amber-900 dark:text-amber-100 leading-relaxed" data-ref="https://www.instagram.com/p/DaAFV1gDien/|146">
+                      <i data-lucide="triangle-alert" class="inline-block w-4 h-4 mr-1.5 -mt-0.5"></i>
+                      Reliability Issues: Users report frequent network and service disruptions with Tanzanian banks and mobile money operators, particularly around the end of each month. These outages can last from 3 PM to 8 PM or from 6 PM to 12 AM, creating major reliability issues for digital transactions.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="pl-4 pr-3 py-3 border-l-4 border-accent-500 bg-accent-50/40 dark:bg-accent-900/30 rounded-r-lg">
+          <p class="text-sm font-medium text-accent-900 dark:text-accent-100 leading-relaxed" data-ref="https://www.facebook.com/UBAKenyaBank/posts/-east-africas-digital-finance-moment-cross-border-payments-challengeeast-africa-/1377684357728186/|20">
+            <i data-lucide="info" class="inline-block w-4 h-4 mr-1.5 -mt-0.5"></i>
+            Regional Context: East Africa is one of the most dynamic digital finance ecosystems globally, yet cross-border payments remain slow, expensive, and fragmented, presenting both challenges and opportunities for digital freight platforms to integrate innovative payment solutions.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Conclusion Section -->
+    <section id="conclusion" class="py-20 bg-primary-50/50 dark:bg-gray-800" data-aos="fade-up">
+      <div class="max-w-5xl mx-auto px-6">
+        <h2 class="text-3xl font-bold mb-8 text-primary-700 dark:text-primary-300">
+          Market Viability Assessment &amp; Strategic Recommendations
+        </h2>
+
+        <div class="space-y-8">
+          <div class="card-interactive p-8 bg-white/90 backdrop-blur-sm dark:bg-gray-900 rounded-xl shadow-md">
+            <h3 class="text-2xl font-semibold text-primary-700 dark:text-primary-300 mb-4">
+              Market Viability Summary
+            </h3>
+            <p class="text-gray-700 dark:text-gray-300 mb-4" data-ref="https://capmad.com/post/structuring-a-fragmented-fleet-the-new-frontier-of-african-road-logistics|52">
+              The digital freight platform market in Tanzania and East Africa presents a compelling opportunity driven by significant inefficiencies in current logistics operations. With empty backhaul rates of 40-60%, logistics costs representing 50-75% of goods value, and fragmented supply chains lacking visibility, there is substantial value to be captured through digital optimization.
+            </p>
+            <p class="text-gray-700 dark:text-gray-300 mb-4" data-ref="https://africasignal.com/lori-systems-building-the-digital-highways-for-africas-cargo/|36">
+              Successful platforms like Lori Systems have demonstrated the ability to scale to over 20,000 trucks across 12 countries, proving market acceptance and operational feasibility. However, cash flow management and working capital challenges remain critical considerations for platform sustainability.
+            </p>
+            <p class="text-gray-700 dark:text-gray-300" data-ref="https://www.linkedin.com/pulse/how-digital-freight-platforms-revolutionizing-africas-gqu1f|37">
+              The primary benefits of digital freight platforms include monetizing backhaul trips, providing real-time cargo visibility, empowering small truck owners, offering financial inclusion solutions, and enhancing regional trade efficiency under the AfCFTA agreement.
+            </p>
+          </div>
+
+          <div class="grid md:grid-cols-2 gap-6">
+            <div class="card-interactive p-6 bg-accent-50/50 dark:bg-accent-900/20 rounded-xl shadow-md">
+              <div class="flex items-center space-x-3 mb-4">
+                <div class="flex-shrink-0 w-10 h-10 bg-accent-100 dark:bg-accent-900/30 rounded-lg flex items-center justify-center">
+                  <i data-lucide="thumbs-up" class="w-5 h-5 text-accent-600 dark:text-accent-400"></i>
+                </div>
+                <h4 class="text-lg font-semibold text-accent-700 dark:text-accent-300">Key Strengths</h4>
+              </div>
+              <ul class="space-y-2 text-sm text-gray-700 dark:text-gray-300">
+                <li class="flex items-start">
+                  <i data-lucide="arrow-right" class="w-4 h-4 text-accent-600 dark:text-accent-400 mr-2 mt-0.5 flex-shrink-0"></i>
+                  <span>Huge market inefficiencies create significant value gaps</span>
+                </li>
+                <li class="flex items-start">
+                  <i data-lucide="arrow-right" class="w-4 h-4 text-accent-600 dark:text-accent-400 mr-2 mt-0.5 flex-shrink-0"></i>
+                  <span>Proven successful models exist (Lori Systems, Kobo360)</span>
+                </li>
+                <li class="flex items-start">
+                  <i data-lucide="arrow-right" class="w-4 h-4 text-accent-600 dark:text-accent-400 mr-2 mt-0.5 flex-shrink-0"></i>
+                  <span>Strong digital payment infrastructure in East Africa</span>
+                </li>
+                <li class="flex items-start">
+                  <i data-lucide="arrow-right" class="w-4 h-4 text-accent-600 dark:text-accent-400 mr-2 mt-0.5 flex-shrink-0"></i>
+                  <span>EAC frameworks support cross-border operations</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="card-interactive p-6 bg-primary-50/50 dark:bg-primary-900/20 rounded-xl shadow-md">
+              <div class="flex items-center space-x-3 mb-4">
+                <div class="flex-shrink-0 w-10 h-10 bg-primary-100 dark:bg-primary-900/30 rounded-lg flex items-center justify-center">
+                  <i data-lucide="triangle-alert" class="w-5 h-5 text-primary-600 dark:text-primary-400"></i>
+                </div>
+                <h4 class="text-lg font-semibold text-primary-700 dark:text-primary-300">Critical Challenges</h4>
+              </div>
+              <ul class="space-y-2 text-sm text-gray-700 dark:text-gray-300">
+                <li class="flex items-start">
+                  <i data-lucide="arrow-right" class="w-4 h-4 text-primary-600 dark:text-primary-400 mr-2 mt-0.5 flex-shrink-0"></i>
+                  <span>Cash flow management and working capital pressures</span>
+                </li>
+                <li class="flex items-start">
+                  <i data-lucide="arrow-right" class="w-4 h-4 text-primary-600 dark:text-primary-400 mr-2 mt-0.5 flex-shrink-0"></i>
+                  <span>Cross-border regulatory fragmentation</span>
+                </li>
+                <li class="flex items-start">
+                  <i data-lucide="arrow-right" class="w-4 h-4 text-primary-600 dark:text-primary-400 mr-2 mt-0.5 flex-shrink-0"></i>
+                  <span>High fraud rates in mobile payment systems</span>
+                </li>
+                <li class="flex items-start">
+                  <i data-lucide="arrow-right" class="w-4 h-4 text-primary-600 dark:text-primary-400 mr-2 mt-0.5 flex-shrink-0"></i>
+                  <span>Resistance from traditional brokers and intermediaries</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="card-interactive p-8 bg-white/90 backdrop-blur-sm dark:bg-gray-900 rounded-xl shadow-md">
+            <h3 class="text-2xl font-semibold text-primary-700 dark:text-primary-300 mb-4">
+              Strategic Recommendations
+            </h3>
+            <div class="space-y-4">
+              <div class="p-4 bg-primary-50/50 dark:bg-primary-900/20 rounded-lg">
+                <h4 class="font-semibold text-primary-700 dark:text-primary-300 mb-2" data-ref="https://africasignal.com/lori-systems-building-the-digital-highways-for-africas-cargo/|36">
+                  1. Focus on Enterprise Customers Initially
+                </h4>
+                <p class="text-sm text-gray-700 dark:text-gray-300">
+                  Target large enterprises in FMCG, agriculture, manufacturing, and construction sectors who have clear budgets for logistics optimization and can provide stable revenue streams to support platform growth.
+                </p>
+              </div>
+
+              <div class="p-4 bg-accent-50/50 dark:bg-accent-900/20 rounded-lg">
+                <h4 class="font-semibold text-accent-700 dark:text-accent-300 mb-2" data-ref="https://www.linkedin.com/pulse/how-digital-freight-platforms-revolutionizing-africas-gqu1f|37">
+                  2. Build Strong Trust &amp; Safety Mechanisms
+                </h4>
+                <p class="text-sm text-gray-700 dark:text-gray-300">
+                  Implement rigorous carrier vetting, real-time tracking, cargo insurance, and transparent pricing to overcome resistance from traditional brokers and build confidence among enterprise customers.
+                </p>
+              </div>
+
+              <div class="p-4 bg-primary-50/50 dark:bg-primary-900/20 rounded-lg">
+                <h4 class="font-semibold text-primary-700 dark:text-primary-300 mb-2" data-ref="https://capmad.com/post/structuring-a-fragmented-fleet-the-new-frontier-of-african-road-logistics|52">
+                  3. Optimize Working Capital Management
+                </h4>
+                <p class="text-sm text-gray-700 dark:text-gray-300">
+                  Develop strategies to manage cash flow pressures from late shipper payments, potentially through working capital facilities or alternative financing mechanisms, as demonstrated by Kobo360's evolution beyond simple matching.
+                </p>
+              </div>
+
+              <div class="p-4 bg-accent-50/50 dark:bg-accent-900/20 rounded-lg">
+                <h4 class="font-semibold text-accent-700 dark:text-accent-300 mb-2" data-ref="https://citizen.digital/article/how-east-african-traders-are-losing-billions-to-a-broken-cross-border-payment-system-n383223|3">
+                  4. Leverage Digital Identity Solutions
+                </h4>
+                <p class="text-sm text-gray-700 dark:text-gray-300">
+                  Implement a government-backed, unified KYC ('Know Your Customer') system to address the inefficiency of repeatedly submitting documents to multiple banks, allowing traders to verify once and be recognized across all financial institutions.
+                </p>
+              </div>
+
+              <div class="p-4 bg-primary-50/50 dark:bg-primary-900/20 rounded-lg">
+                <h4 class="font-semibold text-primary-700 dark:text-primary-300 mb-2" data-ref="https://www.truckinginfo.com/digital-cover-features/cargo-thefts-new-playbook-strategic-fraud-double-brokering-and-cybercrime-hit-trucking|65">
+                  5. Prioritize Security &amp; Fraud Prevention
+                </h4>
+                <p class="text-sm text-gray-700 dark:text-gray-300">
+                  Implement robust security measures including role-based access controls, consistent identity verification protocols, multi-factor authentication, and well-rehearsed incident response plans to combat rising strategic cargo theft.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="pl-4 pr-3 py-3 border-l-4 border-primary-500 bg-primary-50/40 dark:bg-primary-900/30 rounded-r-lg">
+            <p class="text-sm font-medium text-primary-900 dark:text-primary-100 leading-relaxed" data-ref="https://capmad.com/post/structuring-a-fragmented-fleet-the-new-frontier-of-african-road-logistics|52">
+              <i data-lucide="circle-check" class="inline-block w-4 h-4 mr-1.5 -mt-0.5"></i>
+              Final Assessment: The African Continental Free Trade Area (AfCFTA) will only boost intra-African trade if logistics costs and opacity decrease. Digital freight platforms represent a critical enabler for achieving these objectives by providing visibility, traceability, and standardization that large multinational companies increasingly demand from their logistics providers.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-primary-900 dark:bg-gray-950 text-white py-12">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="grid md:grid-cols-3 gap-8 mb-8">
+        <div>
+          <h3 class="text-lg font-semibold mb-4 text-primary-300">About This Research</h3>
+          <p class="text-sm text-gray-300">
+            Comprehensive market analysis of digital freight platforms in Tanzania and East Africa, examining market opportunity, competitive landscape, regulatory environment, and payment infrastructure.
+          </p>
+        </div>
+        <div>
+          <h3 class="text-lg font-semibold mb-4 text-primary-300">Key Topics</h3>
+          <ul class="space-y-2 text-sm text-gray-300">
+            <li class="flex items-center">
+              <i data-lucide="check" class="w-4 h-4 text-primary-400 mr-2"></i>
+              <span>Market Opportunity &amp; Pain Points</span>
+            </li>
+            <li class="flex items-center">
+              <i data-lucide="check" class="w-4 h-4 text-primary-400 mr-2"></i>
+              <span>Demand Analysis by Customer Segment</span>
+            </li>
+            <li class="flex items-center">
+              <i data-lucide="check" class="w-4 h-4 text-primary-400 mr-2"></i>
+              <span>Competitive Landscape</span>
+            </li>
+            <li class="flex items-center">
+              <i data-lucide="check" class="w-4 h-4 text-primary-400 mr-2"></i>
+              <span>Regulatory Compliance</span>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-lg font-semibold mb-4 text-primary-300">Research Scope</h3>
+          <ul class="space-y-2 text-sm text-gray-300">
+            <li class="flex items-center">
+              <i data-lucide="map-pin" class="w-4 h-4 text-primary-400 mr-2"></i>
+              <span>Tanzania &amp; East African Region</span>
+            </li>
+            <li class="flex items-center">
+              <i data-lucide="truck" class="w-4 h-4 text-primary-400 mr-2"></i>
+              <span>Trucking &amp; Freight Logistics</span>
+            </li>
+            <li class="flex items-center">
+              <i data-lucide="credit-card" class="w-4 h-4 text-primary-400 mr-2"></i>
+              <span>Digital Payment Infrastructure</span>
+            </li>
+            <li class="flex items-center">
+              <i data-lucide="shield" class="w-4 h-4 text-primary-400 mr-2"></i>
+              <span>Cross-Border Operations</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-primary-800 pt-8 text-center">
+        <p class="text-sm text-gray-400">
+          © 2025 Digital Freight Platform Market Research. Educational and informational purposes only.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Initialize Libraries -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Initialize Lucide icons
+      lucide.createIcons();
+
+      // Initialize AOS
+      AOS.init({
+        duration: 800,
+        once: true,
+        offset: 100
+      });
+
+      // Progress bar
+      window.addEventListener('scroll', function() {
+        const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+        const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        const scrolled = (winScroll / height) * 100;
+        document.getElementById('progressBar').style.width = scrolled + '%';
+      });
+
+      // Initialize citation system
+      initCitationSystem();
+    });
+  </script>
+</body>
+</html>
